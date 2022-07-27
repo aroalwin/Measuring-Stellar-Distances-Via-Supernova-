@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <title>Measuring Stellar Distancesd</title>
+</head>
+<body>
+
+      <div class="col-xs-12 ">
+       <center> <h1 >Measuring Stellar Distances Via Supernova</h1></center>
+        <nav>
+          <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link active" id="stimulation-tab" data-toggle="tab" href="#stimulation" role="tab" aria-controls="stimulation" aria-selected="true">Simulation</a>
+            <a class="nav-item nav-link" id="calculation-tab" data-toggle="tab" href="#calculation" role="tab" aria-controls="calculation" aria-selected="false">Calculation</a>
+           
+          </div>
+        </nav>
+        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="stimulation" role="tabpanel" aria-labelledby="stimulation-tab">
+            <section>
+              <div class="container">
+                                      
+              <center><h1>SIMULATION</h1></center> <br>
+                                      
+                                           <div class="row">
+                                             
+                                            
+                                             <div class="col">
+                                                 <label>X Value</label>
+                                               <input type="number" class="form-control" id="x-val"placeholder="x value" required>
+                                             </div>
+                                             <div class="col">
+                                                 <label>Y - Value</label>
+                                               <input type="number" class="form-control" id="y-val"placeholder="y value"required>
+                                             </div>
+                                             <div class="col">
+                                               <label>Z - Value</label>
+                                             <input type="number" class="form-control" id="z-val"placeholder="z value" required>
+                                           </div>
+                                           <div class="col">
+                                               
+                                               <button class="btn btn-primary" onclick="run();">check</button>
+                                           </div>
+                                         
+                                           </div>
+                                    
+                                         <!--for image card-->
+                       <br>
+                       <center><h5>Output</h5></center>
+               
+                           <img class="card-img-top rounded mx-auto d-block" id="img" style="width: 800px;height:200px; padding:5px; background-color:#ffffff;box-shadow: 1px 2px 12px #888;">
+                           <div class="card-body">
+                             <center>
+                             <h5 class="card-title" id="title"></h5>
+                            </center>
+                           </div>
+                        
+                            
+                       
+                                  
+                               
+                          
+                           
+                           </section>
+          </div>
+          <div class="tab-pane fade" id="calculation" role="tabpanel" aria-labelledby="calculation-tab">
+            <section>
+                      
+              <div class="container">
+               <center> <h1>CALCULATION</h1></center><br>
+                                    <div class="row">
+                                    
+                                      <div class="col">
+                                        <label>.</label>
+                                      <input type="number" class="form-control" id="m-val"placeholder="m value" required>
+                                    </div>
+                                    <div class="col">
+                                      <label>.</label>
+                                      <input type="text" class="form-control" value="-M = 5 Log (d) - 5"placeholder="m value" required readonly>
+                                     </div>
+                                    <div class="col">
+                                        
+                                        <button class="btn btn-primary" onclick="cal();">calculate</button>
+                                    </div>
+                                  
+                                   
+                                 </div><br>
+                                 <h3 id="ans"></h3>
+
+                                 <h3 id="lightyear"></h3>
+<hr>
+                                    <h4>sample calculation</h4>
+                                    <p><span>formula = m - M = 5 Log (d) - 5<br>
+                                      We know the Absolute magnitude (M) of all SN1a is - 19.3, then<br>
+                                      - 19.3 = 5 + (14.1) – 5 log (d)<br>
+                                      - 19.3 – 19.1 = - 5 log (d)<br>
+                                      38.4/5 = log (d)<br>
+                                      Log (d) = 7.68<br>
+                                      Taking anti log, we get d = 47863009.23<bR>
+                                      To find in light years,<br>
+                                      d = 47863009.23 x 3.26<br>
+                                      Solving this we get, d = 156 million L.Y</span</p>
+                                    </div>
+                                  </section>
+          </div>
+         
+        </div>
+      
+      </div>
+
+
+      
+    
+
+
+
+    
+ 
+               
+                       
+                       
+                   
+    <footer>
+
+      <center><h5>Developed By Arockia Alwin</h5></center>
+    </footer>   
+  </div>           
+                     
+</body>
+
+   <!-- JavaScript Libraries -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+   <script src="js/main.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</html>
